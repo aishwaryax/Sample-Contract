@@ -16,7 +16,7 @@ beforeEach(async () => {
     .deploy({data: bytecode, arguments:[INITIAL_MESSAGE]})
     .send({from: accounts[0], gas: '1000000'})
 
-    inbox.setProvider(provider);
+    inbox.setProvider(provider)
 })
 
 describe('Inbox', () => {
